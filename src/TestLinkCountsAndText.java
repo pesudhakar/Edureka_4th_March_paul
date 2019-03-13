@@ -17,7 +17,7 @@ public class TestLinkCountsAndText {
 		String baseURL = "https://www.edureka.co/";
 		//Maximize the window
 		driver.manage().window().maximize();
-		
+		//Get the URL
 		driver.get(baseURL);
 		
 		List<WebElement> Links = driver.findElements(By.tagName("a"));
@@ -27,8 +27,8 @@ public class TestLinkCountsAndText {
 			String LinkText = Links.get(i).getText();
 			System.out.println("the Text in the links are as follows " +LinkText);
 		}
-		
-		driver.close();
+
+				driver.close();
 	}
 
 }
